@@ -1,0 +1,86 @@
+.BookSlider2{
+    background: #191919;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 50px;
+}
+.BookSlider2 .swiper-wrapper {
+    width: 100%;
+    padding-top: 120px;
+    margin-left: -520px;
+
+}
+
+.BookSlider2 .swiper-slide {
+    text-align: center;
+    width: 20px;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.BookSlider2 .swiper-button-next {
+    display: inline-block;
+    cursor: pointer;
+    color: #ff0645;
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+    font-size: 13px;
+  }
+  .BookSlider2 .swiper-button-prev {
+    display: inline-block;
+    cursor: pointer;
+    color: #ff0645;
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+    font-size: 13px;
+  }
+  .item__card {
+    width: 250px;
+    height: 440px;
+    background: #191919b5;
+    border-bottom: 1px solid #ffffff;
+
+    img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        &:hover{
+            transform: scale(0.9);
+        }
+    }
+
+    h3 {
+        color: #C9AC8C;
+        text-align: start;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 10px;
+    }
+
+    p {
+        text-align: start;
+        color: rgba(255, 255, 255, 0.60);
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 144.4%;
+        margin-top: -5px;
+
+    }
+    h6{
+        color: rgba(255, 255, 255, 0.60);
+        font-size: 17px;
+        text-align: start;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 144.4% ;
+        margin-top: -15px;
+    }
+}

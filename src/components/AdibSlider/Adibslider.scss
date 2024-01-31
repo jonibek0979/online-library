@@ -1,0 +1,35 @@
+.nazm .swiper-wrapper {
+    width: 100%;
+    padding-top: 120px;
+    margin-left: -520px;
+
+}
+
+.nazm .swiper-slide {
+    text-align: center;
+    width: 20px;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nazm .swiper-button-next {
+    display: inline-block;
+    cursor: pointer;
+    color: #ff0645;
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+    font-size: 13px;
+  }
+  .nazm .swiper-button-prev {
+    display: inline-block;
+    cursor: pointer;
+    color: #ff0645;
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+    font-size: 13px;
+  }

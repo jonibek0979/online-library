@@ -1,0 +1,102 @@
+.NOT {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://www.popsci.com/uploads/2021/06/01/milky-way-2695569_1920.jpg?auto=webp&width=1440&height=809.25');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -85px;
+
+    .not__wrapper {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 80px;
+
+
+    }
+}
+
+.not__inner {
+    width: 50%;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 60px;
+        transition: 2s;
+
+        &:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+
+        &:active {
+            transform: scale(1);
+
+        }
+
+        li {
+            font-size: 280px;
+            color: aliceblue;
+
+
+        }
+
+    }
+
+    h2 {
+        font-size: 80px;
+        color: rgb(255, 188, 2);
+        text-align: center;
+        margin-top: -50px;
+        animation: title 3s linear infinite;
+    }
+
+    @keyframes title {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(50%);
+
+        }
+
+        100% {
+            transform: translateY(0);
+
+        }
+
+    }
+
+}
+
+.not__img {
+    width: 50%;
+    padding-top: 120px;
+
+    img {
+        width: 600px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 30px;
+        image-rendering: auto;
+        animation: imganimatin 3s infinite alternate;
+    }
+
+    @keyframes imganimatin {
+        0% {
+            transform: scale(0.5);
+        }
+
+        50% {}
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+
+}

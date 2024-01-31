@@ -1,0 +1,35 @@
+.header {
+    background: #191919;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.866);
+
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__item {
+    margin: 0 28px;
+
+    a {
+        display: block;
+        color: white;
+        padding: 22px 0;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+
+    }
+}
+.header__img{
+    object-fit: cover;
+    border-radius: 50%;
+}

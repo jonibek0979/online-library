@@ -1,0 +1,126 @@
+.Profil {
+    background: #191919;
+    padding-top: 20px;
+    padding-bottom: 150px;
+}
+
+.Profil__main {
+    display: flex;
+    width: 1600px;
+    height: 350px;
+    background: radial-gradient(1678.66% 85.43% at 98.07% 50%, #2F2F2F 0%, #171717 100%);
+    box-shadow: 0px 4px 73px 0px rgba(0, 0, 0, 0.25);
+    padding-top: 39px;
+    padding-left: 96px;
+    border-radius: 20px;
+    background-image: url('../../assets/bg/profile__bg.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.Profil__photo {
+    img {
+        object-fit: cover;
+        object-position: center;
+    }
+
+    h3 {
+        margin-top: 11px;
+        color: #C9AC8C;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 144.4%;
+    }
+
+    p {
+        margin-top: 7px;
+        color: #FFF;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 144.4%;
+    }
+}
+
+.Profil__information {
+    margin-left: 45px;
+
+    h2 {
+        color: #C9AC8C;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 144.4%
+    }
+
+    h5 {
+        margin-top: 6px;
+        color: #FFF;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 144.4%;
+
+        i {
+            color: rgba(255, 255, 255, 0.60);
+
+        }
+    }
+}
+
+.Profil__wrapper {
+    display: flex;
+    justify-content: space-between;
+    
+
+    .Profil__audiyo {
+        width: 30%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .Profil__books {
+        width: 70%;
+    }
+}
+
+.Profil__books__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+        button {
+            color: rgba(255, 255, 255, 0.60);
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            background: transparent;
+            border: none;
+            padding: 8px 50px;
+        }
+        .active{
+            color: #C9AC8C;
+
+        }
+}
+.heart__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    li{
+        margin-top: 35px;
+    }
+}
+.sevimlilar{
+    background: red;
+    width: 100%;
+    height: 100%;
+    margin-left: 20px;
+}
