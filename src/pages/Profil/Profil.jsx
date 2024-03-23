@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Profil.scss'
 import profil from '../../assets/awatar/profile__photo.png'
 import { Link } from 'react-router-dom'
+import book__item from '../../assets/awatar/portfolio__img__book.png'
 
 function Profil() {
 
@@ -28,42 +29,80 @@ function Profil() {
                     </div>
                 </div>
                 <div className="Profil__wrapper">
-                    <div className="Profil__audiyo">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/ParkPatriot2015part5-54.jpg" alt="" />
+                    <div className="Profil__wrapper__left">
+                        <div className="Profil__wrapper__left__top">
+                            <span id='left__span'><h2>Hozir o’qilmoqda...</h2><i class='bx bxs-grid-alt'></i></span>
+                            <div className="deg__card"><img src={book__item} alt="" />
+                            <span id='bokss__item'><h5>Ikki eshik orasi</h5><div><span id='fff'></span></div></span>
+                            <span className='bokss__item'>  <h6>96%</h6><button>Yangilash<i class='bx bx-loader-circle' ></i></button></span>
+                            </div>
+                            <div className="deg__card"><img src={book__item} alt="" />
+                            <span id='bokss__item'><h5>Ikki eshik orasi</h5><div><span id='fff'></span></div></span>
+                            <span className='bokss__item'>  <h6>96%</h6><button>Yangilash<i class='bx bx-loader-circle' ></i></button></span>
+                            </div>
+                            <div className="deg__card"><img src={book__item} alt="" />
+                            <span id='bokss__item'><h5>Ikki eshik orasi</h5><div><span id='fff'></span></div></span>
+                            <span className='bokss__item'>  <h6>96%</h6><button>Yangilash<i class='bx bx-loader-circle' ></i></button></span>
+                            </div>
+                            <div className="deg__card"><img src={book__item} alt="" />
+                            <span id='bokss__item'><h5>Ikki eshik orasi</h5><div><span id='fff'></span></div></span>
+                            <span className='bokss__item'>  <h6>96%</h6><button>Yangilash<i class='bx bx-loader-circle' ></i></button></span>
+                            </div>
+                            <button id='top__button'>Barchasini ko'rish</button>
+                        </div>
+                        
+                        <div className="Profil__wrapper__left__top">
+                            <span id='left__span'><h2>Hozir o’qilmoqda...</h2><i class='bx bxs-grid-alt'></i></span>
+                            <div className="deg__card"><img src={book__item} alt="" />
+                            <span id='bokss__item'><h5>Ikki eshik orasi</h5><div><span id='fff'></span></div></span>
+                            <span className='bokss__item'>  <h6>96%</h6><button>Yangilash<i class='bx bx-loader-circle' ></i></button></span>
+                            </div>
+                            <div className="deg__card"><img src={book__item} alt="" />
+                            <span id='bokss__item'><h5>Ikki eshik orasi</h5><div><span id='fff'></span></div></span>
+                            <span className='bokss__item'>  <h6>96%</h6><button>Yangilash<i class='bx bx-loader-circle' ></i></button></span>
+                            </div>
+                            <div className="deg__card"><img src={book__item} alt="" />
+                            <span id='bokss__item'><h5>Ikki eshik orasi</h5><div><span id='fff'></span></div></span>
+                            <span className='bokss__item'>  <h6>96%</h6><button>Yangilash<i class='bx bx-loader-circle' ></i></button></span>
+                            </div>
+                            <div className="deg__card"><img src={book__item} alt="" />
+                            <span id='bokss__item'><h5>Ikki eshik orasi</h5><div><span id='fff'></span></div></span>
+                            <span className='bokss__item'>  <h6>96%</h6><button>Yangilash<i class='bx bx-loader-circle' ></i></button></span>
+                            </div>
+                            <button id='top__button'>Barchasini ko'rish</button>
+                        </div>
                     </div>
                     <div className="Profil__books">
                         <ul className="Profil__books__list">
                             <li>
                                 <button className={action == 'book' ? 'active' : null} onClick={() => fnSetAction('book')}>books
-                                <ul className="heart__list">
-                            {
-                                data && data.map((item, index) => (
-                                    <li key={index} className="home---item">
-                                        <div className="home__card">
-                                            <Link to={`/author/${item.id}`}>
-                                                <img src={item.img} alt="" />
-                                            </Link>
-                                            <div className="card__innerr">
-                                                <h3>{item.name}</h3>
-                                                <p>{item.age}</p>
-                                                <div>
-                                                    <span> <i className='bi bi-book'></i> {item.book}</span>
-                                                    <span> <i className='bi bi-headphones'></i> {item.audio}</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                ))
-                            }
-                        </ul>
+                                    <ul className="heart__list">
+                                        {
+                                            data && data.map((item, index) => (
+                                                <li key={index} className="home---item">
+                                                    <div className="home__card">
+                                                        <Link to={`/author/${item.id}`}>
+                                                            <img src={item.img} alt="" />
+                                                        </Link>
+                                                        <div className="card__innerr">
+                                                            <h3>{item.name}</h3>
+                                                            <p>{item.age}</p>
+                                                            <div>
+                                                                <span> <i className='bi bi-book'></i> {item.book}</span>
+                                                                <span> <i className='bi bi-headphones'></i> {item.audio}</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            ))
+                                        }
+                                    </ul>
                                 </button>
 
                             </li>
-                            <li>
-                                <button className={action == 'adib' ? 'active' : null} onClick={() => fnSetAction('adib')}>adib</button>
-                            </li>
+
                         </ul>
-                       
+
                     </div>
                 </div>
             </div>

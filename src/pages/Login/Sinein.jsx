@@ -3,8 +3,8 @@ import { Link, useNavigate } from 'react-router-dom'
 
 
 let user = {
-    email: 'a',
-    password: 1
+    email: '',
+    password: ""
 }
 
 
